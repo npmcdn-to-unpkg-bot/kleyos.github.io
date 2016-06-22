@@ -1,0 +1,271 @@
+#all_content {
+    overflow: hidden;
+    background: #F7F2DD;
+    background-image: url(../img/background_tile.jpg);
+}
+
+#introduce, #interest{
+    margin-bottom: 10px;
+}
+
+.right_col, .uniq, .center_col, .feedback, td{
+	text-align: center;
+}
+
+#main_text{
+    line-height: 2;  
+}
+
+#rocket {
+    display: block;
+}
+
+#rocket_sm {
+    display: none;
+}
+
+#img1, #img2, #img3, #img4{
+    position: absolute;
+    display: block;
+    width: 98px;  
+    height: 98px;
+}
+#img1{
+    top:120px;
+    left: 50px;
+    background-image: url(../img/big_slyz.png);
+}
+
+#img2{
+    top:40px;
+    left: 115px;
+    background-image: url(../img/fly_k.png);
+}
+
+#img3{
+    top:0px;
+    left: 215px;
+    background-image: url(../img/sm_slyz.png);
+}
+
+#img4{
+    top:5px;
+    left: 320px;
+    background-image: url(../img/pets.png);
+
+}
+#img1:hover, #img2:hover, #img3:hover, #img4:hover{
+    background-position: 98px 0px;
+}
+#what1, #what2, #what3, #what4 {
+    position: absolute;
+    visibility: hidden;
+    width: 98px;  
+    height: 38px;
+}
+
+#what1{
+    top:80px;
+    left: 20px;
+}
+
+#what2{
+    top:0px;
+    left: 85px;
+}
+
+#what3{
+    top:-40px;
+    left: 185px;
+}
+
+#what4{
+    top:-35px;
+    left: 290px;
+}
+.what {
+    font-size: 14px;
+    border: 1px solid #A59562;
+    color: #A59564;
+    text-align: center;
+    background: inherit;
+    border-radius: 15px;
+    position: relative;
+    line-height: 1;
+    box-shadow: 0 2px 2px 0px rgba(0,0,0,0.25);
+    opacity: .98;
+}
+
+/*navigation*/
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a, a {
+    color: #A5832E;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+a:focus, a:hover {
+    color: #423310;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #A89565;
+}
+.navbar-default .navbar-toggle .icon-bar:hover{
+    background-color: #423310;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    color: #423310;
+    background-color: #CCCCCC;
+    border-color:#CCCCCC;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #C8D4D5;
+}
+
+.logo{
+    background-image: url(../img/logo_sm.png); /* Путь к файлу с исходным  рисунком */
+    display: block; /* Рисунок как блочный элемент */
+    width: 67px; /* Ширина рисунка в пикселах */
+    height: 65px; /* Высота рисунка */
+    margin: 0 auto;
+    float: left;
+   }
+.logo:hover {
+    background-position: 0 -90px; /* Смещение фона */
+   }
+
+}
+/*end navigation*/
+
+td{
+    padding: 5px;
+ }
+
+.right h3, .right p{
+text-align: right;
+ }
+
+.left h3, .left p{
+text-align: left;
+ }
+
+.left, .right{
+    padding-top: 40px;
+}
+
+.bubble {
+    font-size: 14px;
+    border: 1px solid #A59562;
+    background: white;
+    border-radius: 25px;
+    position: relative;
+    white-space: normal;
+    line-height: 150%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+.triangle {
+    width: 1px;
+    height: 1px;
+    border-top: 7px solid #A59562;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left:48%;
+}
+
+#footer{
+    clear: both;
+    background: url(../img/super.png) center top no-repeat;
+    height: 600px; 
+}
+#foot{
+    position: relative;
+}
+
+#foot .adres p, #foot .adres span{
+    font-size: 20px;
+    margin-top: 20px;
+    text-shadow: rgb(227, 82, 38) 3px 4px 5px;
+    color: #191714;
+}
+#foot .adres span{
+    font-size: 14px;
+    line-height: 2;
+}
+pre{
+    background-color: rgba(245, 245, 245, 0);
+    border: 1px solid rgba(204, 204, 204, 0);
+}
+#miu{
+    background-image: url(../img/MIU.png); /* Путь к файлу с исходным  рисунком */
+    display: block; /* Рисунок как блочный элемент */
+    width: 270px; /* Ширина рисунка в пикселах */
+    height: 400px; /* Высота рисунка */
+    margin: 0 auto;
+   }
+#miu:hover {
+    background-position: 270px 0; /* Смещение фона */
+   }
+#cat{
+    background-image: url(../img/i_cat_2.png);
+}
+#helper{
+    background-image: url(../img/i_fr_2.png);
+}
+#friend{
+    background-image: url(../img/i_witch_2.png);
+}
+#b_sit{
+    background-image: url(../img/i_bat_2.png);
+}
+
+#cat, #helper, #friend, #b_sit{
+    display: block; /* Рисунок как блочный элемент */
+    width: 64px; /* Ширина рисунка в пикселах */
+    height: 64px; /* Высота рисунка */
+    margin: 0 auto;
+}
+
+#cat:hover, #helper:hover, #friend:hover, #b_sit:hover{
+       background-position: 64px 0; /* Смещение фона */
+}
+
+.go-up, .go-down {
+ display: none;
+ position: fixed; /*позиционирование*/
+ z-index: 9999; /*поверх все элементов на странице*/
+ right: 10%; /*положение на странице, если слева - left*/
+ background: transparent;
+ cursor: pointer;
+ color: #A59562;
+ text-align: center;
+ font: normal normal 42px/42px sans-serif;
+ text-shadow: 0 1px 2px #000;
+ opacity: .5;
+ margin-bottom: 5px;
+ width: 42px;
+ height: 42px;
+}
+.go-up { bottom: 60px; }
+.go-down { bottom: 10px; }
+.go-down:hover,
+.go-up:hover {
+ opacity: 1;
+}
+
+#alert{
+    position: absolute;
+    z-index: 100000;
+/*    top: 30%;
+    left: 40%;*/
+}

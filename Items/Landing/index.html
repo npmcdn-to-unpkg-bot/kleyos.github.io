@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Earth</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="all_content">
+		<div id="introduce" class="container">
+			<nav role="navigation" class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a href="#" class="navbar-brand logo"></a>
+					</div>
+					<div id="navbarCollapse" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#footer">Как пройти?</a> </li>
+							<li><a href="#interest">Что интересного?</a></li>
+							<li><a href="#love">Любимый клиент!</a></li>
+							<li><a href="#talk">Что о нас говорят?</a></li>
+							<li><a href="https://www.facebook.com/groups/iamfrontend" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						</ul>
+					</div>
+			</nav>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left_col">
+					<div id="img1"></div>
+					<div id="what1" class="what">
+						слизяка увеличения
+						<div class="triangle"></div>
+					</div>
+					<div id="img2"></div>
+					<div id="what2" class="what">
+						летающие капсулы
+						<div class="triangle"></div>
+					</div>
+					<div id="img3"></div>
+					<div id="what3" class="what">
+						слизяка уменьшения
+						<div class="triangle"></div>
+					</div>
+					<div id="img4"></div>
+					<div id="what4" class="what">
+						домашние питомцы
+						<div class="triangle"></div>
+					</div>
+
+					<img id="rocket" src="img/rocket.png" alt="Rocket globe">
+					<img id="rocket_sm" src="img/rocket_sm.png" alt="Rocket globe">
+					
+
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right_col">
+					<h1>А вы уже были в супермаркете "The Earth"?</h1>
+					
+							<p id="main_text">Такого вы еще не видели! Новый инопланетный супермаркет! Если вы уже побывали в нем, то поделитесь впечатлениями о том, что вы там видели</p>
+						
+					<button id="btn_feedback" type="button" class="btn btn-lg btn-primary">Оставить отзыв</button>
+					<div class="clearfix">
+					<br>
+						<p>The Earth в других городах </p>
+						<p><a href="#footer">Львов</a></p>
+						<p><a href="#footer">Одесса</a></p>
+						<p><a href="#footer">Донецк</a></p>	
+					</div>				
+				</div>
+				
+			</div>
+		</div>
+			<hr>
+		<div id="love" class="container"> 
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-lg-12 uniq">
+					<h1>Хотите стать любимым клиентом "The Earth"?</h1>
+					<p>Это очень просто. Приходите в день открытия супермаркета 1 апреля 2016 года и получите скидочную карту "Любимый клиент" совершенно бесплатно</p>
+					<img src="img/love.png">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div id="interest" class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-lg-12 uniq">
+					<h1>Инопланентный помощник MIU</h1>
+					<p>Может выполнть много функций. Просто нужно включить в нем нужную программу</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 right">
+					<div class="row">
+						<div class="col-xs-10 col-md-10 col-lg-10" >
+							<h3>Домашний питомец</h3>
+							<table>
+								<tr>
+									<td><p>Хотите завести домашнее животное. Купите MIU и он заменит вам питомца, потому что он добрый, мягкий и пушистый</p></td>
+									<td><span id="cat"></span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-md-10 col-lg-10" >
+							<h3>Помощник в доме</h3>
+							<table>
+								<tr>
+									<td><p>MIU может быть помощником в доме. Он справляется с домашней работой не хуже вас самих</p></td>
+									<td><span id="helper"></span></td>
+								</tr>
+							</table>			
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 center_col">
+					<div id="miu"></div>
+					<button id="btn_buy" type="button" class="btn btn-lg btn-primary btn-block">Хочу MIU!</button>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 left">
+					<div class="row">
+						<div class="col-xs-10 col-md-10 col-lg-10" >
+							<h3>Строгая няня</h3>
+							<table>
+								<tr>
+									<td><span id="b_sit"></span></td>
+									<td><p>Если не на кого оставить детей, поручите это MIU. В качестве няни он даже бывает строг</p></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-md-10 col-lg-10" >
+							<h3>Друг</h3>
+							<table>
+								<tr>
+									<td><span id="friend"></span></td>
+									<td><p>MIU обладает программой "Друг". Если вы или ваши дете нуждаетесь в верном друге, то MIU с удовольствием им станет</p></td>	
+								</tr>
+							</table>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<hr>
+			<div id="talk" class="container" >
+				<div class="row">
+				<div class="col-xs-12 col-md-12 col-lg-12 uniq">
+					<h1>Многие уже были в "The Earth" в других городах</h1>
+					<p>И вот, что они думают</p>
+				</div>
+			</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 feedback">
+						<div class="bubble" >
+							Я пошла в супермаркет, потому что реклама обещала что-то грандиозное, чего я не могла представить. И это так и было! С такими полезными диковинками наша жизнь станет еще прекрасней!
+						<div class="triangle"></div>
+						</div>
+						<pre>Ольга М. Донецк</pre>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 feedback">
+						<div class="bubble" >
+							Друзья, советую заглянуть. Инопланетяне знают во всем толк лучше нас. Купил себе 4 не то роботов, не то иноплатянчиков-помощников. Они избавили полностью меня от домашних хлопот. Дети просто пищат от щастья!
+						<div class="triangle"></div>
+						</div>
+						<pre>Юрий Ч. Одесса</pre>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 feedback">
+						<div class="bubble" >
+							Трудно описать словами все те штуки, которые есть в супермаркете. Даже сам дизайн магазина поражает воображение. 
+						<div class="triangle"></div>
+						</div>
+						<pre>Юлия М. Львов</pre>
+
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 feedback">
+						<div class="bubble" >
+							Все мягко говоря необычно ((. Люди, если вы такие решительные, что доверяете пришельцам, то вперед!.. Я к этому всему отношусь скептически! Еще не ходил. Но пойду. Интересно посмотреть какими средствами инопланетяне завоюют нашу планету. Хотя зачем им воевать? Мы же им уже сдались и радуемся!
+						<div class="triangle"></div>
+						</div>
+						<pre>Игорь Б. Киев</pre>
+				</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 feedback">
+						<div class="bubble" >
+							Вот прикол! Я не верю! Это все чушь! Вот увидете это первоапрельская шутка!	
+						<div class="triangle"></div>
+						</div>
+						<pre>Катя Ц. Киев</pre>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 feedback">
+						<div class="bubble" >
+							It's awesome that someone can send me a gift certificate but it comes in the form of cash!  I'll definitely use this service in the future!
+						<div class="triangle"></div>
+						</div>
+						<pre>Ох </pre>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="jumbotron">
+			<div id="foot" class="container" >
+				<div class="row">
+					<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-8 col-lg-8 ">
+						<div class="adres">
+							<p><b>Киев</b><br>ул. Инопланетная</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-8 col-lg-8 ">
+						<div class="adres">
+							<p><b>Донецк</b><br>ул. Красной планеты</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-8 col-lg-8 ">
+						<div class="adres">
+							<p><b>Одесса</b><br>ул. Межгалактическая</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-8 col-lg-8 ">
+						<div class="adres">
+							<p><b>Львов</b><br>ул. Зведная</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-8 col-lg-8 ">
+						<div class="adres">
+							<div class="logo"></div>
+							<span> &nbsp</span><br>
+							<span> Все права защищены</span>
+						</div
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="go-up" id='ToTop'>⇧</div>
+		<div class="go-down" id='OnBottom'>⇩</div>
+
+		<div id="modal_feedback" class="modal fade">
+  			<div class="modal-dialog">
+    			<div class="modal-content">
+      			<!-- Заголовок модального окна -->
+      				<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        				<h4 class="modal-title">Оставьте свой отзыв или пожелание. </h4>
+      				</div>
+      			<!-- Основное содержимое модального окна -->
+     				<div class="modal-body">
+        				<form id="f_feedback_short" name="f_feedback_short" autocomplete="off">
+        					<div class="form-group">
+    							<label for="your_name">Ваше имя:</label>
+    							<input type="text" class="form-control rfield" name="your_name" placeholder="Введите Ваше имя">
+  							</div>
+        					<div class="form-group">
+    							<label for="your_email">Адрес email:</label>
+    							<input id="mail" type="text" class="form-control rfield" name="your_email" placeholder="Введите Ваш email">
+  							</div>
+  							<div class="form-group">
+    							<label for="your_tel">Ваш телефон:</label>
+    							<input id="tel" type="text" class="form-control rfield" name="your_tel" placeholder="0000000000" >
+  							</div>
+  							<div class="form-group">
+    							<label for="feed_back">Ваш отзыв:</label>
+    							<textarea class="form-control rfield" name="feed_back"></textarea>
+  							</div>
+
+  							<button type="button" class="btn btn-primary" onclick="dataSubmit()">Отправить</button>
+  							<button type="reset" class="btn btn-default">Отменить</button>
+        				</form>
+      				</div>
+      			</div>
+  			</div>
+		</div>
+		<div id="alert"></div>
+
+</div>	
+
+</body>
+</html>
