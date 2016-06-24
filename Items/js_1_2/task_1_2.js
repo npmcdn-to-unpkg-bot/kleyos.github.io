@@ -11,7 +11,6 @@ function masNames(){
 		flag = false;
 	for (var i = 0; i < 5; i++) {
 		arr.push(prompt("Введите имя в массив", ""));
-		console.log(arr);
 	}
 	findName = prompt("Введите имя для входа", "");
 	for (var i = 0; i < arr.length; i++){
