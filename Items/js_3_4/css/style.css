@@ -1,0 +1,15 @@
+
+h1{
+	text-align: center;
+}
+.wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 30px 50px;
+	box-sizing: border-box;
+}
+.btn{
+	display: block;
+	margin: 10% auto;
+}
+
