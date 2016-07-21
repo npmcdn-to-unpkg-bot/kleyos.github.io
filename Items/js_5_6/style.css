@@ -1,0 +1,27 @@
+
+h1{
+	text-align: center;
+}
+.wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 30px 50px;
+	box-sizing: border-box;
+}
+.well{
+	text-align: center;
+	font-size: 100px;
+	font-weight: bold;
+}
+.btns{
+	text-align: center;
+}
+
+.btn{
+	margin: 5% 8%;
+}
+p{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
