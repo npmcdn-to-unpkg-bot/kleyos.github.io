@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACU,wDAAgD;AAChD,6DAAqD;AAa7D,UAEE;EADA,WAAW,EAAE,SAAS;AAExB,UAEE;EADA,WAAW,EAAE,cAAc",
+"sources": ["../scss/veriables.scss"],
+"names": [],
+"file": "veriables.css"
+}
