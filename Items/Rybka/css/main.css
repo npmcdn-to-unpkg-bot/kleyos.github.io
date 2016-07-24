@@ -276,7 +276,7 @@ nav {
 
   .menu__item:last-child {
     margin-right: 0;
-    /*margin-left: 4px;*/ }
+    margin-left: 4px; }
 
   .menu__link {
     font-size: 14px; }
