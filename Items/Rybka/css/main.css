@@ -1,7 +1,7 @@
 @import url(http://allfont.ru/allfont.css?fonts=pt-sans);
 @import url(http://allfont.ru/allfont.css?fonts=pt-sans-bold);
 @font-face {
-  font-family: 'pt-sans'; }
+  font-family: "pt-sans"; }
 @font-face {
   font-family: 'pt-sans-bold'; }
 .content {
@@ -140,7 +140,7 @@ nav {
   padding: 15px 0;
   margin-top: 30px;
   position: absolute;
-  z-index: 99999;
+  z-index: 9999;
   border: 1px solid #dddfdf;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.09);
   box-sizing: content-box;
@@ -268,14 +268,15 @@ nav {
     line-height: 1; }
 
   nav {
-    width: 735px;
-    padding: 18px; }
+    width: 740px;
+    padding: 18px 17px; }
 
   .menu__item {
-    margin-right: 16px; }
+    margin-right: 17px; }
 
   .menu__item:last-child {
-    margin-right: 0; }
+    margin-right: 0;
+    /*margin-left: 4px;*/ }
 
   .menu__link {
     font-size: 14px; }
@@ -336,6 +337,7 @@ nav {
     background: url(../img/next_sm.png) -21px 0 no-repeat; }
 
   .menu-dots {
+    display: block;
     width: 70px;
     margin: 30px auto; }
     .menu-dots li {
