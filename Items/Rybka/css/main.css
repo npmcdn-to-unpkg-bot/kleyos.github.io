@@ -274,11 +274,11 @@ nav {
     padding: 18px 17px; }
 
   .menu__item {
-    margin-right: 16px; }
+    margin-right: 15px; }
 
   .menu__item:last-child {
     margin-right: 0;
-    margin-left: 4px; }
+    margin-left: 1px; }
 
   .menu__link {
     font-size: 14px; }
