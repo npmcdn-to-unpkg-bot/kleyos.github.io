@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AACU,wDAAgD;AAChD,6DAAqD;AAa7D,UAEE;EADA,WAAW,EAAE,SAAS;AAExB,UAEE;EADA,WAAW,EAAE,cAAc",
-"sources": ["../scss/veriables.scss"],
+"sources": ["../../../../Frontend/FLP%20Ribka%20Test%20Assigment/scss/veriables.scss"],
 "names": [],
 "file": "veriables.css"
 }
