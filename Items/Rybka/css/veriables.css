@@ -1,8 +1,10 @@
-@import url(http://allfont.ru/allfont.css?fonts=pt-sans);
-@import url(http://allfont.ru/allfont.css?fonts=pt-sans-bold);
 @font-face {
-  font-family: "pt-sans"; }
+  font-family: "pt-sans";
+  src: url(../fonts/pt-sans.eot);
+  src: url(../fonts/pt-sans.ttf); }
 @font-face {
-  font-family: 'pt-sans-bold'; }
+  font-family: 'pt-sans-bold';
+  src: url(../fonts/pt-sans-bold.eot);
+  src: url(../fonts/pt-sans-bold.ttf); }
 
 /*# sourceMappingURL=veriables.css.map */
