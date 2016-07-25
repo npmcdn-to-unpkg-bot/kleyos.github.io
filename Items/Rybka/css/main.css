@@ -32,7 +32,7 @@ header .wrapper {
   background: url(../img/logo.png); }
 
 .logo__title {
-  font-family: "Pt Sans";
+  font-family: "pt-sans";
   font-size: 14px;
   line-height: 0em;
   color: #999ba8; }
@@ -66,7 +66,7 @@ header .wrapper {
   float: left;
   margin-left: 50px;
   color: #181616;
-  font-family: "Pt Sans";
+  font-family: "pt-sans";
   font-size: 23px;
   line-height: 0.5em; }
 
@@ -104,7 +104,7 @@ nav {
 .sub-menu {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Pt Sans Bold";
+  font-family: "pt-sans-bold";
   font-size: 16px;
   color: #181616; }
 
@@ -158,7 +158,7 @@ nav {
   .menu--sub .menu__link, .sub-menu .menu__link {
     font-size: 16px;
     text-transform: none;
-    font-family: "Pt Sans";
+    font-family: "pt-sans";
     color: #707070; }
 
 .sub-menu {
@@ -188,7 +188,7 @@ nav {
   background: rgba(192, 156, 97, 0.6); }
   .slide__text p {
     color: #fff;
-    font-family: "Pt Sans";
+    font-family: "pt-sans";
     font-size: 42px;
     padding-left: 25px; }
 
