@@ -29,7 +29,8 @@ html, body {
 .wrapper {
   max-width: 1920px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0 auto; }
 
 header {
   max-width: 1170px;
@@ -116,8 +117,7 @@ nav {
   color: #ffffff; }
 
 .slider__wrapper {
-  overflow: hidden;
-  /*height: 797px;*/ }
+  overflow: hidden; }
 
 .slide__menu {
   position: relative;
@@ -382,7 +382,7 @@ nav {
   .small__content {
     text-align: center;
     top: 360px;
-    left: -6px; }
+    left: 0; }
 
   .col__description {
     display: block;
