@@ -117,11 +117,12 @@ nav {
 
 .slider__wrapper {
   overflow: hidden;
-  height: 797px; }
+  /*height: 797px;*/ }
 
 .slide__menu {
   position: relative;
   height: auto;
+  overflow: hidden;
   list-style: none;
   float: left;
   padding: 0px;
@@ -196,6 +197,7 @@ nav {
   right: 90px; }
 
 .dot__menu {
+  width: 180px !important;
   position: absolute;
   top: 161px;
   left: 20px; }
@@ -205,24 +207,15 @@ nav {
   margin-right: 14px;
   list-style: none; }
 
+.active .dot__link {
+  border: 2px solid #000000;
+  background: #ffffff; }
+
 .dot__link {
   width: 15px;
   height: 15px;
   border-radius: 100%;
   border: 2px solid #ffffff; }
-  .dot__link .active .dot__sm {
-    display: block; }
-
-.dot__link:hover .dot__sm {
-  display: block; }
-
-.dot__sm {
-  display: none;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  border: 2px solid #000000;
-  background: #ffffff; }
 
 .advanteges {
   width: 100%;
@@ -269,11 +262,13 @@ nav {
   text-align: center; }
 
 .content {
-  z-index: 10000; }
+  z-index: 10000;
+  position: absolute;
+  top: 58px; }
 
 .small__content {
   position: absolute;
-  top: 276px;
+  top: 332px;
   left: 391px; }
   .small__content .btn {
     margin-top: 19px;
@@ -317,5 +312,80 @@ nav {
   top: 71px;
   position: absolute;
   letter-spacing: -2px; }
+
+@media (max-width: 1900px) {
+  .wrapper {
+    max-width: 768px; }
+
+  .menu {
+    width: 94%; }
+
+  .menu__item {
+    padding: 0 30px; }
+
+  .slide__menu {
+    height: 60%; }
+
+  .figure_1,
+  .col__description {
+    display: none; }
+
+  .slide__bl1 {
+    left: 34px; }
+
+  .slide__bl2 {
+    left: 320px; }
+
+  .figure_2 {
+    left: 25px; }
+
+  .figure_3 {
+    left: 35px; }
+
+  .small__content {
+    top: 320px;
+    left: 50px; }
+
+  .col__title {
+    font-size: 17px; } }
+@media (max-width: 760px) {
+  .wrapper {
+    max-width: 320px; }
+
+  .phone {
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px; }
+
+  .menu {
+    width: 55%;
+    margin: 0; }
+
+  .menu__item {
+    border: none; }
+
+  .slide__menu {
+    height: 40%; }
+
+  .col__title {
+    font-size: 14px; }
+
+  .col__img1,
+  .col__img2,
+  .col__img3,
+  .col__img4,
+  .content,
+  .slide__bl1,
+  .slide_bl2 {
+    display: none; }
+
+  .small__content {
+    text-align: center;
+    top: 360px;
+    left: -6px; }
+
+  .col__description {
+    display: block;
+    font-size: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
