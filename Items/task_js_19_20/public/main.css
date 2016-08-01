@@ -18,8 +18,8 @@ body {
 .logos,
 footer {
   max-width: 1920px;
-  margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0 auto; }
 
 nav,
 .slider,
@@ -349,6 +349,9 @@ nav,
   font-family: "Ubuntu", arial;
   font-size: 14px;
   padding: 60px 0 40px 37px; }
+
+.logos {
+  border-bottom: 1px solid #2a2d32; }
 
 .partners {
   margin: 90px auto; }
