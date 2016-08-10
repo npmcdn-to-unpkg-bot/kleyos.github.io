@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
+	<div class="part1">
+	<h3>Simple tabs</h3>
 	<div class="tabs">
 	    <ul class="menu">
 	        <li class="menu__item">
-	        	<a class="menu__link active" href="#tab1">NUnc tincidunt</a>
+	        	<a class="menu__link" href="#tab1">NUnc tincidunt</a>
         	</li>
 	        <li class="menu__item">
 	        	<a class="menu__link" href="#tab2">Proin dolor</a>
@@ -30,8 +32,32 @@
         Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
     </div>
 </div>	
+</div>
+<div class="part2">
+  <h3>Simple tooltips</h3>
+  <form>
+    <fieldset>
+      <div class="item">
+        <label for="firstname">First Name</label>
+        <input id="firstname" name="firstname" title="Please provide your firstname.">
+      </div class="item">
+      <div>
+        <label for="lastname">Last Name</label>
+        <input id="lastname" name="lastname" title="Please provide also your lastname.">
+      </div>
+      <div class="item">
+        <label for="address">Address</label>
+        <input id="address" name="address" title="Please provide your address.">
+      </div>
+    </fieldset>
+    <button type="button" name="button">Show help</button>
+  </form>
+</div>
+	
+
+</form>
 </body>
-
+<script type="text/javascript" src="tabs.js"></script>
+<script type="text/javascript" src="toolTips.js"></script>
 <script type="text/javascript" src="task_7_8.js"></script>
-
 </html>
