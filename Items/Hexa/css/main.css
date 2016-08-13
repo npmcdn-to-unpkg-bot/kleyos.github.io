@@ -1,3 +1,5 @@
+@import url(bootstrap.min.css);
+@import url(../owl-carousel/owl.carousel.css);
 @font-face {
   font-family: "ProximaNovaRegular";
   src: url(../fonts/ProximaNovaRegular.eot);
@@ -116,39 +118,25 @@ nav {
   text-decoration: none;
   color: #ffffff; }
 
-.slider__wrapper {
-  overflow: hidden; }
-
-.slide__menu {
-  position: relative;
-  height: auto;
-  overflow: hidden;
-  list-style: none;
-  float: left;
-  padding: 0px;
-  margin: 0px; }
-
-.slide__item {
-  float: left;
-  position: relative; }
-
-.slide__bl1 {
-  width: auto;
-  height: 63px;
+.info-wrapper {
   position: absolute;
   top: 189px;
-  left: 367px;
+  left: 367px; }
+
+.text-block {
+  width: auto;
+  height: 63px;
   float: left;
   transform: skew(-16deg);
   background: rgba(255, 255, 255, 0.7); }
-  .slide__bl1 span {
+  .text-block span {
     display: block;
     color: #000000;
     font-family: "introBlack";
     font-size: 36px;
     text-align: center;
     padding: 0 57px; }
-  .slide__bl1 span::after {
+  .text-block span::after {
     position: absolute;
     content: "";
     height: 3px;
@@ -157,12 +145,12 @@ nav {
     left: 10%;
     bottom: 17%; }
 
-.slide__bl2 {
+.price-block {
   width: auto;
   height: 50px;
-  top: 197px;
-  left: 650px;
-  position: absolute;
+  float: left;
+  margin-left: 25px;
+  margin-top: 7px;
   padding: 0 20px;
   transform: skew(-16deg);
   background: linear-gradient(to left, #037e03, #21d021); }
@@ -176,8 +164,11 @@ nav {
   color: #000000;
   font-family: "introBlack";
   font-size: 45px; }
-  .prise__big small {
-    font-size: 20px; }
+
+small {
+  color: #000000;
+  font-family: "introBlack";
+  font-size: 20px; }
 
 .nvgt {
   position: absolute;
@@ -196,26 +187,23 @@ nav {
   background: url(../img/prev.png)-19px 0 no-repeat;
   right: 90px; }
 
-.dot__menu {
-  width: 180px !important;
+.owl-pagination {
   position: absolute;
-  top: 161px;
-  left: 20px; }
+  top: 450px;
+  left: 456px; }
 
-.dot__item {
+.owl-page {
   display: inline-block;
   margin-right: 14px;
-  list-style: none; }
-
-.active .dot__link {
-  border: 2px solid #000000;
-  background: #ffffff; }
-
-.dot__link {
+  list-style: none;
   width: 15px;
   height: 15px;
   border-radius: 100%;
   border: 2px solid #ffffff; }
+
+.active {
+  border: 2px solid #000000;
+  background: #ffffff; }
 
 .advanteges {
   width: 100%;

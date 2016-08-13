@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 	<title>Test FED</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>		
 	
+	<link rel="stylesheet" href="css/main.css"/>		
 </head>
 <body>
 	<div class="wrapper">
@@ -30,59 +29,20 @@
 		</header>
 		<div class="container-fluid">
 			<div class="slider">
-				<div class="slider__wrapper clearfix">
-					<ul id="slider" class="slide__menu">
-						<li class="slide__item active">
-							<img src="img/slide1.jpg" alt="slide 1">
-							<div id="bl1_0" class="slide__bl1"> 
-								<span>Для зала</span>
-							</div>
-							<div id="bl2_0" class="slide__bl2">
-								<span class="prise__small">от</span>
-								<span class="prise__big">50 
-									<small>$/м<sup>2</sup></small>
-								</span>
-							</div>					
-						</li>
-						<li class="slide__item">
-							<img src="img/slide2.jpg" alt="slide 2">
-							<div id="bl1_1" class="slide__bl1"> 
-								<span>Для детской</span>
-							</div>
-							<div id="bl2_1" class="slide__bl2">
-								<span class="prise__small">от</span>
-								<span class="prise__big">60 
-									<small>$/м<sup>2</sup></small>
-								</span>
-							</div>	
-						</li>
-						<li class="slide__item">
-							<img src="img/slide3.jpg" alt="slide 3">
-							<div id="bl1_2" class="slide__bl1"> 
-								<span>Для кухни</span>
-							</div>
-							<div id="bl2_2" class="slide__bl2">
-								<span class="prise__small">от</span>
-								<span class="prise__big">70 
-									<small>$/м<sup>2</sup></small>
-								</span>
-							</div>	
-						</li>
-						<li class="slide__item">
-							<img src="img/slide4.jpg" alt="slide 4">
-							<div id="bl1_3" class="slide__bl1"> 
-								<span>Для спальни</span>
-							</div>
-							<div id="bl2_3" class="slide__bl2">
-								<span class="prise__small">от</span>
-								<span class="prise__big">80 
-									<small>$/м<sup>2</sup></small>
-								</span>
-							</div>	
-						</li>
-					</ul>					
+				<div id="owl" class="owl-carousel">
+  					<div class="slider__item">
+  						<img  src="img/slide1.jpg" alt="slide1">
+					</div>
+  					<div class="slider__item">
+  						<img  src="img/slide2.jpg" alt="slide2">
+					</div>
+				  	<div class="slider__item">
+				  		<img  src="img/slide3.jpg" alt="slide3">
+			  		</div>
+				  	<div class="slider__item">
+				  		<img src="img/slide4.jpg" alt="slide4">
+			  		</div>
 				</div>
-					
 				<nav>
 					<ul class="menu">
 						<li class="menu__item">
@@ -128,7 +88,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+		</div>
 		<div class="content ">
 			<div class="figures clearfix">
 				<div class="figure_1"></div>
@@ -143,27 +103,16 @@
 			<button type="button" class="btn">
 				Смотреть идеи
 			</button>
-			<span class="nvgt" id="prev"></span>
-			<ul id="dots" class="dot__menu">	
-				<li class="dot__item">
-					<div id="dot_0" class="dot__link"></div>
-				</li>
-				<li class="dot__item">
-					<div id="dot_1" class="dot__link"></div>
-				</li>
-				<li class="dot__item">
-					<div id="dot_2" class="dot__link"></div>
-				</li>
-				<li class="dot__item">
-					<div id="dot_3" class="dot__link"></div>
-				</li>
-			</ul>
-			<span class="nvgt" id="next"></span>	
+			
+			<div class="owl-controls">
+				<span class="nvgt" id="prev"></span>
+				<span class="nvgt" id="next"></span>	
+			</div>
+			
 		</div>
 	</div>
 </div>
-	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>	
+	<script src="js/scripts.min.js"></script>	
+	<script src="js/main.js"></script>
 </body>
 </html>

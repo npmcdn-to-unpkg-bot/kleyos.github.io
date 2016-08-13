@@ -1,113 +1,82 @@
-var ul,bl1, bl2;
-var liItems, elsDot;
-var imageNumber;
-var imageWidth,bl1Width;
-var prev, next;
-var currentPostion = 0, bl1Left;
-var currentImage = 0;
+var slide_info = 
+	{
+		text:  ['Для зала','Для детской','Для кухни','Для спальни'],
+				
+		price: [50, 60, 70, 80],
 
-function init(){
-	ul = document.getElementById('slider');
-	liItems = ul.children;
-	imageNumber = liItems.length;
-	imageWidth = liItems[0].children[0].clientWidth;
-	elsDot = document.getElementById('dots').children;
+		createWrapperBlock: function(){
+			var wrap_block 	= document.createElement('div');
+			var sl_item 	= document.getElementsByClassName('slider__item');
+			var dot_arr 	= document.getElementsByClassName('owl-page');
 
-	ul.style.width = parseInt(imageWidth * imageNumber) + 'px';
-	prev = document.getElementById("prev");
-	next = document.getElementById("next");
+			
+			wrap_block.className = "info-wrapper";
 
-	//debugger
-	prev.addEventListener('click',function(){
-		clickPrev();
-	});
-	next.addEventListener('click',function(){
-		clickNext();
-	});
-	generatePager(imageNumber);
-}
+			for (var i = 0, length = dot_arr.length; i < length; i++)
+				{	
 
-function animate(opts){
-	var start = new Date;
-	var id = setInterval(function(){
-		var timePassed = new Date - start;
-		var progress = timePassed / opts.duration;
-		if (progress > 1){
-			progress = 1;
-		}
-		var delta = opts.delta(progress);
-		opts.step(delta);
-		if (progress == 1){
-			clearInterval(id);
-			opts.callback();
-		}
-	}, opts.delay || 17);
-	//return id;
-}
-
-function slideTo(imageToGo){
-	var direction,
-	elsRect,
-	elsBl2;
-	var numOfImageToGo = Math.abs(imageToGo - currentImage);
-	// slide toward left
-
-	direction = currentImage > imageToGo ? 1 : -1;
-	currentPostion = -1 * currentImage * imageWidth;
-	var opts = {
-		duration:1000,
-		delta:function(p){return p;},
-		step:function(delta){
-
-			ul.style.left = parseInt(currentPostion + direction * delta * imageWidth * numOfImageToGo) + 'px';
-
-			elsRect	=	liItems[imageToGo].querySelectorAll('#bl1_'+imageToGo)[0].getBoundingClientRect();
-			elsBl2	=	liItems[imageToGo].querySelectorAll('#bl2_'+imageToGo)[0];
-			elsBl2.style.left = elsRect.right+10 + "px";
-			elsDot[currentImage].classList.remove('active');
-			elsDot[imageToGo].classList.add('active');
+					if (dot_arr[i].classList.contains("active")){
+						var wr 	=  sl_item[i].getElementsByClassName("info-wrapper");
+						
+						//debugger;
+						if (wr.length == 0)
+							{
+								sl_item[i].appendChild(wrap_block);
+								this.createTextBlock(wrap_block,i);
+								this.createPriceBlock(wrap_block,i);
+							}
+						else
+							{
+								return false;
+							}
+						
+					}
+				}
 		},
-		callback:function(){currentImage = imageToGo;}
-	};
-	animate(opts);
-}
+		createTextBlock: function(block, i){
+				var text_block = document.createElement('div');
+					tx = this.text[i];
+				
+				text_block.className = "text-block";
+				text_block.innerHTML = '<span>'+tx+'</span>'
+				
+				block.appendChild(text_block);
+				
+				},
+		
+		createPriceBlock: function(block, i){
+				var price_block = document.createElement('div');
+				var pr = this.price[i];
 
-function clickPrev(){
-	if (currentImage == 0){
-		slideTo(imageNumber - 1);
-	}
-	else{
-		slideTo(currentImage - 1);
-	}
-}
+				price_block.className = "price-block";
 
-function clickNext(){
-	if (currentImage == imageNumber - 1){
-		slideTo(0);
-	}
-	else{
-		slideTo(currentImage + 1);
-	}
-}
+				price_block.innerHTML = '<span class="prise__small">от <span class="prise__big">'
+										+pr+
+										' </span><small>$/м<sup>2</sup></small></span>';
+				block.appendChild(price_block);
+				}
 
-function generatePager(imageNumber){
-	var pageNumber;
-	var pagerDiv = document.getElementById('dots');
-	for (i = 0; i < imageNumber; i++){
-		var li = document.createElement('li');
-		pageNumber = document.createTextNode(parseInt(i + 1));
-		// add event inside a loop, closure issue.
-		li.onclick = function(i){
-			return function(){
-				slideTo(i);
-			}
-		}(i);
 	}
-	var computedStyle = document.defaultView.getComputedStyle(li, null);
-	//border width 1px; offsetWidth = 22
-	var liWidth = parseInt(li.offsetWidth);
-	var liMargin = parseInt(computedStyle.margin.replace('px',""));
-	pagerDiv.style.width = parseInt((liWidth + liMargin * 2) * imageNumber) + 'px';
-}
 
-window.onload = init;
+$(function() {
+ 	
+ var $owl = $("#owl");	
+  	$owl.owlCarousel({
+  						items :     1,
+  						loop:       true,
+  						pagination: true
+  					});
+  
+  $('#next').on('click', function(){
+	  	$owl.trigger('owl.next');
+		slide_info.createWrapperBlock();
+   	});
+  
+  $('#prev').on('click', function(){
+  		$owl.trigger('owl.prev');
+  		slide_info.createWrapperBlock();
+  	});
+
+  slide_info.createWrapperBlock();
+ 
+});
