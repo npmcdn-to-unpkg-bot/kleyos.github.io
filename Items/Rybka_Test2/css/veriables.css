@@ -1,0 +1,19 @@
+/*$fontBold:'pt-sans-bold'; */
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.eot);
+  src: url(../fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url(../fonts/Roboto-Medium.eot);
+  src: url(../fonts/Roboto-Medium.ttf); }
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../fonts/Roboto-Regular.eot);
+  src: url(../fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: 'MuseoSansBold';
+  src: url(../fonts/MuseoSansBold.eot);
+  src: url(../fonts/MuseoSansBold.ttf); }
+
+/*# sourceMappingURL=veriables.css.map */
