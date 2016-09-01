@@ -1,0 +1,283 @@
+@import 'veriables';
+
+*{
+	margin:0;
+	padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-fluid{
+	padding: 0;
+}
+.right{
+	float: right;
+}
+
+.wrapper{
+	width: 100%;
+	overflow: hidden;
+}
+.main-screen{
+	background: $colorgrey;
+}
+
+.video-background{
+	min-width:100%;
+	min-height:100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	video{
+	   z-index:-1;
+	   min-width:100%;
+	   min-height:100%;
+	}
+}
+.menu,
+.advantages,
+.phone{
+	/*width: 98%;*/
+	/*margin: 0 auto;*/
+}
+
+.logo{
+	text-align: center;
+}
+.logo__img{
+	margin-top: 2% ;
+	margin-bottom: 10%;
+}
+.advantages{
+}
+.phone{
+	/*display: table;*/
+	margin-top: 4%;
+	text-align: center;
+	padding: 0 8%;
+}
+.phone__num{
+	/*display: table-cell;*/
+	/*vertical-align: middle;*/
+	margin-bottom: 2%;
+	text-align: center;
+	font-family: $fontbold;
+	font-size: 25px;
+	line-height: 1;
+	text-shadow: white 1px 1px 0, white -1px -1px 0, 
+                 white -1px 1px 0, white 1px -1px 0;
+}
+.btn{
+	background:linear-gradient(#ff5058, #fd6d48);
+	margin-bottom: 5%;
+	padding: 6px 10px;
+	border:none;
+	border-radius: 5px;
+	font-family: $fontbold;
+	font-size: 95%;
+	color: $colorwhite;
+	&:hover{
+		background: linear-gradient(#e6666c, #ee9881);
+	};
+}	
+
+nav{
+	background:  #c9c9c9;
+}	
+
+.col{
+	text-align: center;
+	margin-bottom: 4%;
+}
+.col__title{
+	font-size: 100%;
+	font-family: $fontregular;
+	color: $colorwhite;
+}
+.menu{
+	/*display: table;*/
+	margin-top: 15px;
+	text-align: center;
+	}
+
+.menu__item {
+	/*display: table-cell;*/
+	/*vertical-align: middle;*/
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 15px;
+	list-style: none;
+}
+
+.menu__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $fontregular;
+	font-size: 15px;
+	color: $colorblack;
+	padding: 10px 15px;
+	position: relative;
+	&:hover{
+		font-weight: bold;
+		color: $colorblack;
+		text-decoration: none;
+	}
+}
+
+.title-section{
+	font-family: $fontregular;
+	font-size: 35px;
+	color: $colorgrey;
+	text-align: center;
+}
+.trust{
+
+}
+.trust__logos{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.trust__img{
+	margin-bottom: 15px;
+}
+
+.offers{
+	width: 100%;
+	background: url(../img/offer1.jpg); 
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: $colorwhite;
+	.title-section{
+		color: $colorwhite;
+		font-size: 35px/100%*90%;
+		}
+}
+
+.offer{
+	margin:10%;
+	padding:10%;
+	background: $colorgrey;
+}
+.hide{
+	display: none;
+}
+.list__item{
+	padding:2%;
+}
+
+.offer__img{
+	height: 450px;
+	width: 100%;
+}
+.offer__text{
+	line-height: 2.5;
+}
+
+.services{
+	@extend .offers;
+	.title-section{
+		text-align: center;
+	}
+
+}
+.service{
+	margin:10%;
+	padding:2%;
+	background: $colorgrey;	
+}
+.service__info{
+	text-align: left;
+}
+.slider{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.slider__item{
+	text-align: center;
+}
+.slider__title{
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: $fontregular;
+	color: $colorwhite;
+}
+.slider__collaps{
+	position: absolute;
+	left: 0;
+	top:0;
+	background: $colorgrey;
+	overflow-x:visible;
+}
+.btn__close{
+	cursor:pointer;
+	text-align: right;
+	margin-right: 20px;
+	color: #ff5058;
+}
+.nvgt{
+	position:absolute;
+	bottom: 3%;
+	cursor: pointer;
+	color: $colorwhite;
+}
+	
+#prev{
+	left: 3%;
+}
+#next{
+	right: 3%;
+}
+
+
+.btn__more{
+	background-color: transparent;
+	padding: 7px 18px;
+	border-radius: 5px;
+	border:1px solid #ff5058;
+	font-size: 15px;
+	margin-bottom: 2%;
+	&:hover{
+		background-color:#c9c9c9;
+	};
+}
+
+.prices{
+	@extend .wrapper;
+	height: 350px;
+	text-align: center;
+}
+
+/*@media (max-width: 1900px){
+	.logo__img{
+		height: 180px;
+		width: 180px;
+	}
+	.phone__num{
+		font-size: 25px;
+	}
+	.btn{
+		font-size: 15px;
+	}
+	.col__title{
+		font-size: 18px;
+	}
+
+	.offer__title{
+		font-size: 25px;
+	}
+	.offer__img{
+		height: 300px;
+	}
+	.offer__text{
+		line-height: 1.5;
+		width: 100%;
+	}
+
+}
+
+*/
