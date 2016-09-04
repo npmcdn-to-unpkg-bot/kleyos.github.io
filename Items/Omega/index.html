@@ -11,13 +11,13 @@
 <body>
 	<div class="wrapper container-fluid">
 		<header class="main-screen">
-			<section class="video-background">
-				<!-- <video id="video_background"  muted="false">
+			<section class="background">
+				<video class="video__back"  loop="loop" autoplay="autoplay" muted="false">
   					<source  src="video/MOVIE.mp4" type='video/mp4'>
-  				</video> -->
+  				</video>
 			</section>
 			
-			<section>	
+			<section id="offers" class="logos">	
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
 						<div class="logo">
@@ -29,19 +29,19 @@
 										
 			<section class="advantages">
 				<div class="row ">
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 						<div class="col">
 							<img class="" src="img/icon_phone.png" alt="phone">
 							<p class="col__title">Управление проектами по обработке массового потока звонков - то что мы любим делать и всегда это делаем лучше других</p>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 						<div class="col">
 							<img class="" src="img/icon_phone.png" alt="Clock">
 							<p class="col__title">Запускать проекты вместе с нами выгоднее - мы знаем чего не надо делать, поэтому вы уже выигрываете на старте</p>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 						<div class="col">
 							<img class="" src="img/icon_head.png" alt="Clock">
 							<p class="col__title">В нашей команде только профессионалы, которые даже за самые сложные проекты берутся с большим интересом</p>
@@ -52,11 +52,11 @@
 			
 			<section class="phone">
 				<div class="row ">
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<p class="phone__num">+ 380 67 223 16 32</p>
 						</div>	
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<button class="btn">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<button class="btn__phone">
 							Получить консультацию специалиста
 						</button>
 					</div>
@@ -67,60 +67,61 @@
 			<nav class="clearfix">
 				<ul class="menu">
 					<li class="menu__item">
-						<a href="#" class="menu__link">Главная</a>
+						<a href="#main" class="menu__link">Главная</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Предложение</a>
+						<a href="#offers" class="menu__link">Предложение</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Услуги</a>
+						<a href="#services" class="menu__link">Услуги</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Отзывы</a>
+						<a href="#trust" class="menu__link">Отзывы</a>
 					</li>
 					<li class="menu__item">
 						<a href="#" class="menu__link">Вакансии</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Обраная связь</a>
+						<a href="#back" class="menu__link">Обраная связь</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Контакты</a>
+						<a href="#map" class="menu__link">Контакты</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
+
 		
 		<main>
-			<section class="trust">
+			<section id="trust" class="trust">
 				<h1 class="title-section">Нам доверяют свой бизнес</h1>
 				<div class="trust__logos row">
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
 						<div class="trust__img">
 							<img src="img/logo_1.png" alt="Company1">
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
 						<div class="trust__img">
 							<img src="img/logo_2.png" alt="Company1">
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
 						<div class="trust__img">
 							<img src="img/logo_3.png" alt="Company1">
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
 						<div class="trust__img">
 							<img src="img/logo_4.png" alt="Company1">
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
 						<div class="trust__img">
 							<img src="img/logo_5.png" alt="Company1">
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
 						<div class="trust__img">
 							<img src="img/logo_6.png" alt="Company1">
 						</div>
@@ -129,10 +130,10 @@
 				</div>
 			</section>
 
-			<section class="offers">
+			<section id="offers" class="offers">
 				
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="offer right">
 							<h1 class="title-section">С Omega Contact вы получаете</h1>
 							<ul class="list">
@@ -148,19 +149,7 @@
 							
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-						<div class="hide">
-							<img src="img/offer1.jpg" alt="offer1" class="offer__img img-responsive">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-						<div class="hide">
-							<img src="img/offer2.jpg" alt="offer1" class="offer__img img-responsive">
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="offer ">
 							<h1 class="title-section">Omega Contact предлагает</h1>
 							
@@ -177,16 +166,54 @@
 						</div>
 					</div>
 				</div>
+				<!-- <div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="hide">
+							<img src="img/offer2.jpg" alt="offer1" class="offer__img img-responsive">
+						</div>
+					</div>
+					
+				</div> -->
 			</section>
-			<section class="prices">
-				какая-то секция с вакансиями например
+			<section id="" class="prices">
+				ЦЕНЫ
 			</section>
 
-			<section class="services ">
+			<section id="services" class="services ">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-						<div class="hide">
-							<img src="img/offer1.jpg" alt="offer1" class="offer__img img-responsive">
+						<div class="service--add">
+							<div class="service__collaps">
+					  			<div class="slider__collaps">
+		  							<div class="btn__close">
+		  								<i class="fa fa-times" aria-hidden="true"></i>
+		  							</div>
+		  							<p class="service__info"><strong>Горячая линия</strong> – многоканальная телефонная линия для уже существующих и новых клиентов, которая позволяет нам обрабатывать одновременно поступающие обращения.</p>
+		  							<p class="service__info"><strong>Информационная линия</strong> – организация справочной службы  вашей компании: операторы нашего контакт-центра предоставляют существующим и потенциальным клиентам компании-партнера любую справочную информацию, относительно товаров-услуг в круглосуточном режиме 24/7/365</p>
+									<p class="service__info"><strong>Виртуальный офис</strong>  - обработка входящих обращений и оперативная трансляция важной информации заказчику. Предоставляется услуга в качестве персонального секретаря для стартап-проектов и клиентов на начальном этапе развития бизнеса, не имеющих постоянного офиса.</p>
+									<p class="service__info"><strong>Линия поддержки</strong> – операторы нашего контакт-центра отвечают на звонки, поступившие от Ваших клиентов и предоставляют  профессиональные консультации по различным вопросам, в том числе и технические консультации. </p>
+									<p class="service__info"><strong>Служба заказов</strong> – это прием и оформление заказа, с последующей его передачей клиенту</p>
+		  						</div>
+					  			<div class="slider__collaps">
+		  							<div class="btn__close">
+		  								<i class="fa fa-times" aria-hidden="true"></i>
+		  							</div>
+		  							<p class="service__info"><strong>Телемаркетинг</strong> - это исходящие телефонные кампании по продвижению Ваших товаров и услуг, представляющие собой обзвон целевой аудитории, в процессе которого профессионально подготовленные операторы расскажут о Вашей компании, товаре или услуге, расскажут об уникальности предложения. Вашим менеджерам останется только встречаться с уже «горячими» клиентами и обсуждать условия сделки, работать с базой клиентов, заинтересованных в Вашем товаре или услуге.</p>
+		  							<p class="service__info"><strong>Анкетирование</strong>  -  проведение телефонных опросов респондентов с помощью четко сформулированных и специально подобранных вопросов.</p>
+									<p class="service__info"><strong>Cоздание и актуализация баз данных</strong> — это подтверждение имеющейся информации и получение дополнительных необходимых данных о Вашем настоящем или потенциальном клиенте (размер предприятия, контактная информация первых лиц из руководства компании, выпускаемая продукция и т.д.).</p>
+									<p class="service__info"><strong>Кросс-продажи</strong> –предложение новых продуктов и услуг компании уже существующим клиентам.</p>
+									<p class="service__info"><strong>Тестовые звонки</strong> с целью проверки уровня и качества работы сотрудников.</p>
+									<p class="service__info"><strong>Информирование</strong> – предоставление существующим клиентам компании новой дополнительной информации о компании, проводимых акциях, товарах и услугах.</p>	
+		  						</div>
+					  			<div class="slider__collaps">
+					  				<div class="btn__close">
+		  								<i class="fa fa-times" aria-hidden="true"></i>
+		  							</div>
+					  				<p class="service__info"><strong>Голосовое меню IVR Interactive Voice Responce</strong> - автоматический информатор, с возможностью озвучивать любые данные из базы данных клиента, используемых при входящих звонках.  IVR - один из недорогих способов коммуникаций с существующими и потенциальными заказчиками, позволяет снизить нагрузку на службу поддержки клиентов. Идеально подходит для оперативного информирования клиента о текущих акциях, решения типовых проблем и перенаправления на различные службы компании.</p>
+									<p class="service__info"><strong>Рассылка голосовых сообщений IVM (Interactive Voice Messaging</strong>) – автоматический информатор, позволяющий озвучить любую информацию при исходящем звонке. Услуга идеально подходит для того, чтобы коротко сообщить клиентам о новых предложениях и событиях, напомнить им что-либо, сообщить о статусе ваших отношений. После согласования и записи профессиональными операторами текста голосового сообщения, Ваши клиенты получат всю необходимую им информацию на свои телефоны в виде входящего звонка.</p>
+									<p class="service__info"><strong>SMS  - рассылки</strong> - простой, быстрый и надежный способ сообщения информации вашим клиентам. Рассылка может быть рекламной или информационной. Рассылка всегда проводится по базе, предоставленной заказчиком.</p>
+					  			</div>
+					  		</div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -197,52 +224,71 @@
 								<div id="owl" class="owl-carousel">
 				  					<div class="slider__item">
 				  						<h3 class="slider__title">Входящий Сервис</h3>
-				  						<p class="slider__text">Горячая линия, Информационная линия, Виртуальный офис, Линия поддержки, Служба заказов</p>
+				  						<!-- <p class="slider__text">Горячая линия, Информационная линия, Виртуальный офис, Линия поддержки, Служба заказов</p> -->
+				  						<ul class="list">
+				  							<li class="list__item">Горячая линия</li>
+				  							<li class="list__item">Информационная линия</li>
+				  							<li class="list__item">Виртуальный офис</li>
+				  							<li class="list__item">Линия поддержки</li>
+				  							<li class="list__item">Служба заказов</li>
+				  						</ul>
 				  						<button class="btn__more">Подробнее...</button>
-				  						<div class="slider__collaps">
-				  							<div class="btn__close">
-				  								<i class="fa fa-times" aria-hidden="true"></i>
-				  							</div>
-				  							<p class="service__info"><strong>Горячая линия</strong> – многоканальная телефонная линия для уже существующих и новых клиентов, которая позволяет нам обрабатывать одновременно поступающие обращения.</p>
-				  							<p class="service__info"><strong>Информационная линия</strong> – организация справочной службы  вашей компании: операторы нашего контакт-центра предоставляют существующим и потенциальным клиентам компании-партнера любую справочную информацию, относительно товаров-услуг в круглосуточном режиме 24/7/365</p>
-											<p class="service__info"><strong>Виртуальный офис</strong>  - обработка входящих обращений и оперативная трансляция важной информации заказчику. Предоставляется услуга в качестве персонального секретаря для стартап-проектов и клиентов на начальном этапе развития бизнеса, не имеющих постоянного офиса.</p>
-											<p class="service__info"><strong>Линия поддержки</strong> – операторы нашего контакт-центра отвечают на звонки, поступившие от Ваших клиентов и предоставляют  профессиональные консультации по различным вопросам, в том числе и технические консультации. </p>
-											<p class="service__info"><strong>Служба заказов</strong> – это прием и оформление заказа, с последующей его передачей клиенту</p>
-				  						</div>
 									</div>
 				  					<div class="slider__item">
 										<h3 class="slider__title">Исходящий Сервис</h3>
-										<p class="slider__text">Телемаркетинг, Анкетирование, Cоздание и актуализация баз данных, Кросс-продажи, Тестовые звонки, Информирование</p>
+										<ul class="list">
+				  							<li class="list__item">Телемаркетинг</li>
+				  							<li class="list__item">Анкетирование</li>
+				  							<li class="list__item">Cоздание и актуализация баз данных</li>
+				  							<li class="list__item">Кросс-продажи</li>
+				  							<li class="list__item">Тестовые звонки</li>
+				  							<li class="list__item">Информирование</li>
+				  						</ul>
 				  						<button class="btn__more">Подробнее...</button>
-				  						<div class="slider__collaps">
-				  							<div class="btn__close">
-				  								<i class="fa fa-times" aria-hidden="true"></i>
-				  							</div>
-				  							<p class="service__info"><strong>Телемаркетинг</strong> - это исходящие телефонные кампании по продвижению Ваших товаров и услуг, представляющие собой обзвон целевой аудитории, в процессе которого профессионально подготовленные операторы расскажут о Вашей компании, товаре или услуге, расскажут об уникальности предложения. Вашим менеджерам останется только встречаться с уже «горячими» клиентами и обсуждать условия сделки, работать с базой клиентов, заинтересованных в Вашем товаре или услуге.</p>
-				  							<p class="service__info"><strong>Анкетирование</strong>  -  проведение телефонных опросов респондентов с помощью четко сформулированных и специально подобранных вопросов.</p>
-											<p class="service__info"><strong>Cоздание и актуализация баз данных</strong> — это подтверждение имеющейся информации и получение дополнительных необходимых данных о Вашем настоящем или потенциальном клиенте (размер предприятия, контактная информация первых лиц из руководства компании, выпускаемая продукция и т.д.).</p>
-											<p class="service__info"><strong>Кросс-продажи</strong> –предложение новых продуктов и услуг компании уже существующим клиентам.</p>
-											<p class="service__info"><strong>Тестовые звонки</strong> с целью проверки уровня и качества работы сотрудников.</p>
-											<p class="service__info"><strong>Информирование</strong> – предоставление существующим клиентам компании новой дополнительной информации о компании, проводимых акциях, товарах и услугах.</p>	
-				  						</div>
 									</div>
 								  	<div class="slider__item">
 										<h3 class="slider__title">Дополнительный Сервис</h3>
-										<p class="slider__text">Голосовое меню IVR, Рассылка голосовых сообщений IVM, SMS - рассылка</p>
+				  						<ul class="list">
+				  							<li class="list__item">Голосовое меню IVR</li>
+				  							<li class="list__item">Рассылка голосовых сообщений IVM</li>
+				  							<li class="list__item">SMS - рассылка</li>
+				  						</ul>
 				  						<button class="btn__more">
 							  				Подробнее...
 							  			</button>
-							  			<div class="slider__collaps">
-							  				<div class="btn__close">
-				  								<i class="fa fa-times" aria-hidden="true"></i>
-				  							</div>
-							  				<p class="service__info"><strong>Голосовое меню IVR Interactive Voice Responce</strong> - автоматический информатор, с возможностью озвучивать любые данные из базы данных клиента, используемых при входящих звонках.  IVR - один из недорогих способов коммуникаций с существующими и потенциальными заказчиками, позволяет снизить нагрузку на службу поддержки клиентов. Идеально подходит для оперативного информирования клиента о текущих акциях, решения типовых проблем и перенаправления на различные службы компании.</p>
-											<p class="service__info"><strong>Рассылка голосовых сообщений IVM (Interactive Voice Messaging</strong>) – автоматический информатор, позволяющий озвучить любую информацию при исходящем звонке. Услуга идеально подходит для того, чтобы коротко сообщить клиентам о новых предложениях и событиях, напомнить им что-либо, сообщить о статусе ваших отношений. После согласования и записи профессиональными операторами текста голосового сообщения, Ваши клиенты получат всю необходимую им информацию на свои телефоны в виде входящего звонка.</p>
-											<p class="service__info"><strong>SMS  - рассылки</strong> - простой, быстрый и надежный способ сообщения информации вашим клиентам. Рассылка может быть рекламной или информационной. Рассылка всегда проводится по базе, предоставленной заказчиком.</p>
-							  			</div>
 							  		</div>
-
 								</div>
+								<div class="service__collaps">
+						  			<div class="slider__collaps">
+			  							<div class="btn__close">
+			  								<i class="fa fa-times" aria-hidden="true"></i>
+			  							</div>
+			  							<p class="service__info"><strong>Горячая линия</strong> – многоканальная телефонная линия для уже существующих и новых клиентов, которая позволяет нам обрабатывать одновременно поступающие обращения.</p>
+			  							<p class="service__info"><strong>Информационная линия</strong> – организация справочной службы  вашей компании: операторы нашего контакт-центра предоставляют существующим и потенциальным клиентам компании-партнера любую справочную информацию, относительно товаров-услуг в круглосуточном режиме 24/7/365</p>
+										<p class="service__info"><strong>Виртуальный офис</strong>  - обработка входящих обращений и оперативная трансляция важной информации заказчику. Предоставляется услуга в качестве персонального секретаря для стартап-проектов и клиентов на начальном этапе развития бизнеса, не имеющих постоянного офиса.</p>
+										<p class="service__info"><strong>Линия поддержки</strong> – операторы нашего контакт-центра отвечают на звонки, поступившие от Ваших клиентов и предоставляют  профессиональные консультации по различным вопросам, в том числе и технические консультации. </p>
+										<p class="service__info"><strong>Служба заказов</strong> – это прием и оформление заказа, с последующей его передачей клиенту</p>
+			  						</div>
+						  			<div class="slider__collaps">
+			  							<div class="btn__close">
+			  								<i class="fa fa-times" aria-hidden="true"></i>
+			  							</div>
+			  							<p class="service__info"><strong>Телемаркетинг</strong> - это исходящие телефонные кампании по продвижению Ваших товаров и услуг, представляющие собой обзвон целевой аудитории, в процессе которого профессионально подготовленные операторы расскажут о Вашей компании, товаре или услуге, расскажут об уникальности предложения. Вашим менеджерам останется только встречаться с уже «горячими» клиентами и обсуждать условия сделки, работать с базой клиентов, заинтересованных в Вашем товаре или услуге.</p>
+			  							<p class="service__info"><strong>Анкетирование</strong>  -  проведение телефонных опросов респондентов с помощью четко сформулированных и специально подобранных вопросов.</p>
+										<p class="service__info"><strong>Cоздание и актуализация баз данных</strong> — это подтверждение имеющейся информации и получение дополнительных необходимых данных о Вашем настоящем или потенциальном клиенте (размер предприятия, контактная информация первых лиц из руководства компании, выпускаемая продукция и т.д.).</p>
+										<p class="service__info"><strong>Кросс-продажи</strong> –предложение новых продуктов и услуг компании уже существующим клиентам.</p>
+										<p class="service__info"><strong>Тестовые звонки</strong> с целью проверки уровня и качества работы сотрудников.</p>
+										<p class="service__info"><strong>Информирование</strong> – предоставление существующим клиентам компании новой дополнительной информации о компании, проводимых акциях, товарах и услугах.</p>	
+			  						</div>
+						  			<div class="slider__collaps">
+						  				<div class="btn__close">
+			  								<i class="fa fa-times" aria-hidden="true"></i>
+			  							</div>
+						  				<p class="service__info"><strong>Голосовое меню IVR Interactive Voice Responce</strong> - автоматический информатор, с возможностью озвучивать любые данные из базы данных клиента, используемых при входящих звонках.  IVR - один из недорогих способов коммуникаций с существующими и потенциальными заказчиками, позволяет снизить нагрузку на службу поддержки клиентов. Идеально подходит для оперативного информирования клиента о текущих акциях, решения типовых проблем и перенаправления на различные службы компании.</p>
+										<p class="service__info"><strong>Рассылка голосовых сообщений IVM (Interactive Voice Messaging</strong>) – автоматический информатор, позволяющий озвучить любую информацию при исходящем звонке. Услуга идеально подходит для того, чтобы коротко сообщить клиентам о новых предложениях и событиях, напомнить им что-либо, сообщить о статусе ваших отношений. После согласования и записи профессиональными операторами текста голосового сообщения, Ваши клиенты получат всю необходимую им информацию на свои телефоны в виде входящего звонка.</p>
+										<p class="service__info"><strong>SMS  - рассылки</strong> - простой, быстрый и надежный способ сообщения информации вашим клиентам. Рассылка может быть рекламной или информационной. Рассылка всегда проводится по базе, предоставленной заказчиком.</p>
+						  			</div>
+						  		</div>
 								<div class="owl-controls">
 									<span class="nvgt" id="prev">
 										<i class="fa fa-chevron-left fa-1x" aria-hidden="true"></i>
@@ -254,9 +300,56 @@
 							</div>	
 						</div>
 			</section>
-			<section class="prices">
-				<!-- <img src="img/price_temp.png" alt="" class="price__img"> -->
-				секция c ценами 
+
+			<section id="" class="prices">
+
+				ВАКАНСИИ
+			</section>
+			
+			<section id="back" class="back">
+				<h1 class="title-section">Свяжитесь с нами прямо сейчас</h1>
+ 				<form id="" class="form__back form-horizontal" role="form" autocomplete="off">
+  					<div class="form-group">
+   					<label for="name" class="sr-only">Name</label>
+      					<input name="name" type="text" placeholder="Имя" class="rfield form-control">
+  					</div>
+  					<div class="form-group">
+   					<label for="name" class="sr-only">Tel</label>
+      					<input name="phone" type="tel" placeholder="Телефон" class="rfield form-control">
+  					</div>
+  					<div class="form-group">
+   					<label for="name" class="sr-only">E-mail</label>
+      					<input name="email" type="email" placeholder="Email" class="rfield form-control">
+  					</div>
+  					<div class="form-group">
+   					<label for="name" class="sr-only">Message</label>
+      					<textarea name="message" placeholder="Ваше сообщение" class="rfield form-control"></textarea>
+  					</div>
+  					<button class="btn__submit form-control" type="button">Отправить</button>
+				</form>
+			</section>
+			
+			<section id="map" class="map">
+				<h1 class="title-section">Наши контакты</h1>
+				<div class="contacts">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.6816571556!2d30.252503021023415!3d50.402136749715815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sru!4v1472889942431" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<address class="adr">
+								<p class="adr__text">По вопросам сотрудничества</p>
+								<a class="adr__link" href="">omega@gmail.com</a>
+
+								<p class="adr__text">По вопросам трудоустройва</p>
+								<a class="adr__link" href="">omega@gmail.com</a>
+								
+								<p class="adr__text">03000 Украина, г.Киев, ул. Спасская 25а, офис 501</p>
+				
+							</address>
+						</div>	
+					</div>
+				</div>
 			</section>
 		</main>
 

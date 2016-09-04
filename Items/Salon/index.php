@@ -189,7 +189,7 @@
  				<input name="wr_name" type="text" placeholder="Имя" class="rfield">
  				<input name="wr_email" type="email" placeholder="Email" class="rfield">
  				<textarea name="wr_message" placeholder="Ваше сообщение" class="rfield"></textarea>
- 				<button type="botton" class="pure-button pure-button-primary button-xlarge" onclick="generalSendForms('sendContact.php', '#f_write_to_us', 'Ваше письмо успешно отправлено')">
+ 				<button type="button" class="pure-button pure-button-primary button-xlarge" onclick="generalSendForms('sendContact.php', '#f_write_to_us', 'Ваше письмо успешно отправлено')">
  						Отправить
  				</button>
  			</form>
