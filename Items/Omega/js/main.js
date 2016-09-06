@@ -84,9 +84,14 @@ $btnClose.on('click', function(event){
 
 $('.trust__img').equalHeights();
 
-if ($(window).width()>=768) 
+if ($(window).width()>=767) 
   {
       $('.offer').equalHeights();
+
+  }
+if ($(window).width()>=791) 
+  {
+      $('.service').equalHeights();
 
   }
 

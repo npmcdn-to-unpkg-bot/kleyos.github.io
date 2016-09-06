@@ -42,7 +42,7 @@
 
 .video__back {
   z-index: -1;
-  min-width: 120%; }
+  width: 150%; }
 
 .logo,
 .advantages {
@@ -82,8 +82,7 @@
     background: linear-gradient(#e6666c, #ee9881); }
 
 nav {
-  background: #c9c9c9;
-  z-index: 1000; }
+  background: #c9c9c9; }
 
 .col {
   text-align: center;
@@ -108,7 +107,7 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "ProximaNovaRegular";
-  font-size: 15px;
+  font-size: 100%;
   color: #000000;
   padding: 10px 15px;
   position: relative; }
@@ -119,7 +118,7 @@ nav {
 
 .title-section {
   font-family: "ProximaNovaRegular";
-  font-size: 35px;
+  font-size: 200%;
   color: #393939;
   text-align: center;
   margin-bottom: 5%; }
@@ -194,9 +193,6 @@ nav {
   font-weight: bold;
   color: #ffffff; }
 
-/*.slider__text{
-	font-size: 110%;
-}*/
 .slider__collaps {
   position: absolute;
   left: 0;
@@ -260,10 +256,17 @@ nav {
 .adr__link {
   text-decoration: none; }
 
-@media (min-width: 481px) {
+@media (min-width: 482px) {
+  .video__back {
+    min-width: 128%; }
+
   .menu,
-  .advantages,
-  .phone {
+  .advantages {
+    width: 80%;
+    margin: 0 auto; }
+
+  .phone,
+  .trust {
     width: 98%;
     margin: 0 auto; }
 
@@ -274,10 +277,18 @@ nav {
     width: 70%;
     margin: 0 auto; } }
 @media (min-width: 768px) {
+  .video__back {
+    width: 100%; }
+
+  .menu,
+  .advantages {
+    width: 98%; }
+
   .phone {
     margin: 3% auto; }
 
   .phone__num {
+    margin-top: 5px;
     float: right; }
 
   .btn__phone, .btn__submit {
@@ -289,15 +300,35 @@ nav {
   .service__info strong {
     font-size: 115%; } }
 @media (min-width: 992px) {
+  .phone__num {
+    font-size: 30px; }
+
+  .btn__phone, .btn__submit {
+    font-size: 120%; }
+
   .form__back {
     width: 50%;
     margin: 0 auto; } }
 @media (min-width: 1366px) {
+  .video__back {
+    width: 150%; }
+
   .menu,
   .advantages,
   .phone,
+  .trust,
   .contacts {
     width: 70%; }
+
+  .menu {
+    display: table; }
+
+  .menu__item {
+    display: table-cell; }
+
+  .menu__link {
+    font-size: 120%;
+    vertical-align: super; }
 
   .form__back {
     width: 40%; } }

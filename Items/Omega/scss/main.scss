@@ -31,7 +31,7 @@
 }
 .video__back{
    	z-index:-1;
-   	min-width: 120%;
+    width: 150%;
 	}
 
 .logo,
@@ -47,8 +47,7 @@
 	margin-top: 2% ;
 	margin-bottom: 10%;
 }
-.advantages{
-}
+
 .phone{
 	margin-top: 4%;
 	text-align: center;
@@ -79,7 +78,6 @@
 
 nav{
 	background:  #c9c9c9;
-	z-index: 1000;
 }	
 
 .col{
@@ -107,7 +105,7 @@ nav{
     text-decoration: none;
     text-transform: uppercase;
     font-family: $fontregular;
-	font-size: 15px;
+	font-size: 100%;
 	color: $colorblack;
 	padding: 10px 15px;
 	position: relative;
@@ -120,7 +118,7 @@ nav{
 
 .title-section{
 	font-family: $fontregular;
-	font-size: 35px;
+	font-size: 200%;
 	color: $colorgrey;
 	text-align: center;
 	margin-bottom: 5%;
@@ -212,9 +210,7 @@ nav{
 	font-weight: bold;
 	color: $colorwhite;
 }
-/*.slider__text{
-	font-size: 110%;
-}*/
+
 .slider__collaps{
 	position: absolute;
 	left: 0;
@@ -290,11 +286,18 @@ nav{
 .adr__link{
 	text-decoration: none;
 }
-@media (min-width: 481px){
-	
+
+@media (min-width: 482px){
+	.video__back{
+		min-width: 128%;
+	}
 	.menu,
-	.advantages,
-	.phone{
+	.advantages{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.phone,
+	.trust{
 		width: 98%;
 		margin: 0 auto;
 	}
@@ -309,11 +312,19 @@ nav{
 	}
 }
 @media (min-width: 768px){
+	.video__back{
+		width: 100%;
+	}
+	.menu,
+	.advantages{
+		width: 98%;
+	}
 	.phone{
 		margin: 3% auto;
 	}
 
 	.phone__num{
+		margin-top: 5px;
 		float: right;
 	}
 	.btn__phone{
@@ -330,17 +341,40 @@ nav{
 
 }
 @media(min-width: 992px){
+	.phone__num{
+		font-size: 30px;
+	}
+	.btn__phone{
+		font-size: 120%;
+	
+	}
 	.form__back{
 		width: 50%;
 		margin: 0 auto;
 	}
 }
 @media(min-width: 1366px){
+	.video__back{
+		width: 150%;
+	}
+
 	.menu,
 	.advantages,
 	.phone,
+	.trust,
 	.contacts{
 		width: 70%;
+	}
+	.menu{
+		display: table;
+	}
+	.menu__item{
+		display: table-cell;
+
+	}
+	.menu__link{
+		font-size: 120%;
+		vertical-align: super;
 	}
 	.form__back{
 		width: 40%;
