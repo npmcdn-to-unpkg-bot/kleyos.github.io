@@ -14,21 +14,11 @@ footer{
 	margin-top: 50px;
 	text-align: right;
 }
-.item__list{
-	width: 20%;
-	float: left;
-}
-.item__description{
-	width: 50%;
-	float: left;
-}
+
 .item__link{
 	cursor: pointer;
 }
-.link{
-	float: left;
-	width: 30%;
-}
+
 .link__img{
 	width:100%;
 }
