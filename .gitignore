@@ -1,14 +1,9 @@
 # 
 
-.idea/
-
-*.iml
-
-*.iws
 *.zip
-node_modules/*
-temp/*
-.sass-cache/*
-psd/*
+Items/*/node_modules/*
+Items/*/temp/*
+Items/*/.sass-cache/*
+Items/*/psd/*
 
 

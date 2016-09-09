@@ -5,9 +5,10 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 	<title>Home Page</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-<!-- 	<link rel="stylesheet" type="text/css" href="css/style.css" />
- -->	<link rel="stylesheet" type="text/css" href="css/main.css"/>		
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>		
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->		
 </head>
 <body >
@@ -15,14 +16,15 @@
 <div class="main-wrapper">
 	
 
-	<div class="slider">
-		<div class="slide">
-			<div><img src="img/slide.jpg"> </div>
-			<div><img src="img/slide.jpg"> </div>
-			<div><img src="img/slide.jpg"> </div>
-		</div>
-	</div>
+	
 	<div class="all-content">
+		<div class="slider">
+			<div class="slide">
+				<div><img src="img/slide.jpg"> </div>
+				<div><img src="img/slide.jpg"> </div>
+				<div><img src="img/slide.jpg"> </div>
+			</div>
+		</div>
 		<header>
 			<div class="wrapper ">
 				<nav class="clearfix">
@@ -81,7 +83,7 @@
 					<p class="left__text">Если у вас возникли вопросы или трудности в ходе бронирования - звоните нам по номеру <span class="phone">+7 (495) 351-00-29</span></p>	
 					<div class="gallary">
 						<h3 class="gallary__title">Свободные номера подходящие вашим критериям</h3>
-						<div class="gallary__picture">
+						<div class="gallary__picture clearfix">
 							<figure class="gallary__photo">
 								<img class="photo" src="img/room.png" alt="photo1" />
 	    						<figcaption><img src="img/people.png" alt="icon"
@@ -120,39 +122,43 @@
 				<div class="right">
 					<form action="#" class="order">
 						<div class="order__info">
-							<p class="order__field clearfix">
+							<p class="order__field">
 								<label class="order__label" for="type_room">Тип номера</label>
-									<select id="type_room">
+									<select id="type_room"><img src="img/people2.png" alt="icon2">
 											<option>
 												<span><img src="img/people2.png" alt="icon2">&nbsp;(эконом)</span>
 											</option>
 									</select> 
 							</p>
 		
-							<p class="order__field clearfix">
+							<p class="order__field fl">
 								<label class="order__label" for="adults">Взрослые</label>
 									<select id="adults">
 										<option>2</option>
 									</select> 
+							</p>
+							<p class="order__field">
 								<label class="order__label" for="kids">Дети</label>
 									<select id="kids">
 										<option>2</option>
-									</select> 
+									</select>
 							</p>
-		
-							<p class="order__field clearfix">
+							<p class="order__field fl">
 								<label class="order__label" for="check_in">Заезд</label>
 									<input type="text" name="check-in" id="check_in">
+								
+							</p>
+							<p class="order__field">
 								<label class="order__label" for="check_out">Отъезд</label>
 									<input type="text" name="check-out" id="check_out">	
 							</p>
 		
-							<p class="order__field clearfix"> 
+							<p class="order__field"> 
 								<label class="order__label" for="e_mail">E-mail</label>
 									<input type="email" name="e-mail" id="e_mail">
 							</p>
 		
-							<p class="order__field clearfix"> 
+							<p class="order__field"> 
 								<label class="order__label">Телефон</label>
 									<input type="tel" name="phone-num" id="phone_num">
 							</p>
@@ -174,11 +180,11 @@
 										<a href="#" class="menu__link">шампанское</a>
 									</li>
 								</ul>
+							<p class="total">Итого <span>26 400 p.</span></p>
 						</div>
 
-						<p class="total">Итого <span>26 400 p.</span></p>
-						
-						<button class="order__btn" type="submit">ЗАКАЗАТЬ</button>
+				
+						<button class="order__btn clearfix" type="submit">ЗАКАЗАТЬ</button>
 
 
 					</form>
@@ -222,6 +228,7 @@
 
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>		
 	<script type="text/javascript" src="js/jquery-migrate.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/custom.js" ></script>
 	<script type="text/javascript" src="js/main.js" ></script>

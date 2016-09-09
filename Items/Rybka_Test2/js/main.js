@@ -1,10 +1,10 @@
 $(function(){
-	
 
 //slider
 	$('.slide').slick({
 		arrows:false,
 		autoplay:true,
-		adaptiveHeight:true
+		speed: 1500,
+		responsive:true
 	});
 });
