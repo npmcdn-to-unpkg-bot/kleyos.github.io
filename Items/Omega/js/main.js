@@ -32,67 +32,25 @@ $(function() {
 
 //End Slider
 
-//Collaps Services
 
-$collapsServices.hide();
+//equalHeights
+$('.trust__img').equalHeights();
 
-$btnMore.on('click', function(event){
-    
-    var $target =   $(event.target),
-        $index =    $btnMore.index($target);
-    
-    //debugger
-    if ($(window).width()<=991) 
-      {
-        $collapsServices.eq($index).show();
-        $slider.css('overflow-y','auto');
-      }
-    else
-      {
-        $add.height($service.height()).show();
-        $collapsServicesAdd.eq($index).show('slow');
-        $add.css('overflow-y','auto');
-      }
 
-    $owl.trigger('owl.stop'); 
 
-    $nav.toggle();
+//Services tabs.js
+var $tab = $('.menu--serv .menu__item');
+
+$tab.on('click', function(e){
+  
+    event.preventDefault();
 
 });
 
-$btnClose.on('click', function(event){
-    
-    if ($(window).width()<=991)
-      {
-        $collapsServices.hide();
-        $slider.css('overflow-y','hidden');
-      }
-    else
-      {
-          $collapsServicesAdd.hide();
-          $add.hide();
-      }
-
-    $owl.trigger('owl.play',5000);
-
-    $nav.toggle();
-  });
-
-//End Collaps
-
-//equalHeights
-
-$('.trust__img').equalHeights();
-
-if ($(window).width()>=767) 
-  {
-      $('.offer').equalHeights();
-
-  }
-if ($(window).width()>=791) 
-  {
-      $('.service').equalHeights();
-
-  }
-
+$('.tabs').lightTabs(
+    {
+      selector: $tab,
+      paragraph: '.serv'
+    }
+  );
 });
