@@ -1,4 +1,4 @@
-(function($){
+(function($, window, undefined){
    $.fn.lightTabs = function({selector, paragraph})
    {
         var createTabs = function(){
