@@ -72,10 +72,6 @@
   .btn__phone:hover, .btn__job:hover, .btn__submit:hover {
     background: linear-gradient(#e6666c, #ee9881); }
 
-nav {
-  padding: 20px 0;
-  background: rgba(201, 201, 201, 0.3); }
-
 .col {
   text-align: center;
   margin-bottom: 4%; }
@@ -85,7 +81,12 @@ nav {
   font-family: "ProximaNovaRegular";
   color: #ffffff; }
 
+nav {
+  padding: 20px 0;
+  background: rgba(201, 201, 201, 0.3); }
+
 .menu {
+  padding: 0;
   text-align: center; }
 
 .menu__item {
